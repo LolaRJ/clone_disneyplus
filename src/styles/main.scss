@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @use 'variaveis';
 @use 'hero';
 
@@ -13,26 +14,48 @@
     font-weight: 700;
 }
 
+=======
+@use 'hero';
+
+>>>>>>> 755fc61fc79399c0dc4fc228722d20c83a791f4b
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+<<<<<<< HEAD
 
 body {
     background-color: variaveis.$corDeFundo;
     font-family: Avenir, sans-serif;
+=======
+
+$corDeFundo: #040714;
+$corTextoPrincipal: silver;
+$corTextSegundario: #f9f9f9;
+
+body {
+    background-color: $corDeFundo;
+>>>>>>> 755fc61fc79399c0dc4fc228722d20c83a791f4b
 }
 
 @mixin text($fontSize: 16px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
+<<<<<<< HEAD
     color: variaveis.$corTextoPrincipal;
+=======
+    color: $corTextoPrincipal;
+>>>>>>> 755fc61fc79399c0dc4fc228722d20c83a791f4b
 }
 
 @mixin title($fontSize: 40px) {
     @include text($fontSize);
+<<<<<<< HEAD
     color: variaveis.$corTextSegundario;
+=======
+    color: $corTextSegundario;
+>>>>>>> 755fc61fc79399c0dc4fc228722d20c83a791f4b
 }
 
 .text-big {
@@ -61,6 +84,10 @@ body {
 
 .link-text {
     @include text(18px);
+<<<<<<< HEAD
     color: variaveis.$corTextSegundario;
+=======
+    color: $corTextSegundario;
+>>>>>>> 755fc61fc79399c0dc4fc228722d20c83a791f4b
     text-decoration: underline;
 }
