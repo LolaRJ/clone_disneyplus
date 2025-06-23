@@ -38,7 +38,7 @@ body {
     color: variaveis.$corTextoSegundario;
 }
 
-.text-big {
+.text--big {
     @include text(18px);
 }
 
