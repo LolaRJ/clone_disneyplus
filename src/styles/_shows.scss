@@ -27,7 +27,7 @@
         justify-content: center;
 
         &__button {
-            color: variaveis.$corTextoSegundario;
+            color: variaveis.$corTextoSecundario;
             font-size: 20px;
             border: none;
             padding-bottom: 5px;
@@ -38,7 +38,7 @@
             border-bottom: 5px solid transparent;
 
             &--is-active {
-            border-color: variaveis.$corTextoSegundario;
+            border-color: variaveis.$corTextoSecundario;
             }
         }
     }
