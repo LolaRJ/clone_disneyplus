@@ -6,6 +6,7 @@
     left: 0;
     background-color: variaveis.$corDeFundo;
     transition: background-color .5s ease;
+    z-index: 1;
 
     &--is-hidden {
         background-color: transparent;
@@ -24,6 +25,11 @@
         padding: 8px 36px;
         display: flex;
         justify-content: space-between;
+
+        /* responsível para celular */
+        @media (max-width:768px) {
+            padding: 0 12px 0 20px;
+        }
     }
 
     &__logo {
@@ -31,6 +37,11 @@
         width: 100%;
         margin: 5px;
         transition: opacity .5s ease;
+
+        /* responsível para celular */
+        @media (max-width:768px) {
+            max-width: 64px;
+        }
     }
 
     &__links {
@@ -44,5 +55,13 @@
 
     .button {
         height: 50px;
+
+        /* responsível para celular */
+        @media (max-width:768px) {
+            font-size: 13px;
+            padding: 8px 11px;
+            height: 40px;
+            letter-spacing: 0;
+        }
     }
 }
